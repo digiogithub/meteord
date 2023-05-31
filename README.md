@@ -16,7 +16,7 @@ docker run -d \
     -e MONGO_OPLOG_URL=mongodb://oplog_url \
     -e BUNDLE_URL=http://mybundle_url_at_s3.tar.gz \
     -p 8080:80 \
-    meteorhacks/meteord:base
+    digiosysops/meteord:1.6.0.1
 ~~~
 
 

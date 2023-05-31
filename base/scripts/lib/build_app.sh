@@ -3,6 +3,9 @@ set -e
 COPIED_APP_PATH=/copied-app
 BUNDLE_DIR=/tmp/bundle-dir
 
+NODE_TLS_REJECT_UNAUTHORIZED=0
+export NODE_TLS_REJECT_UNAUTHORIZED
+
 # sometimes, directly copied folder cause some wierd issues
 # this fixes that
 cp -R /app $COPIED_APP_PATH
